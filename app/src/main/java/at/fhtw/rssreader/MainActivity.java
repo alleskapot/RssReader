@@ -1,18 +1,12 @@
 package at.fhtw.rssreader;
 
 import android.app.Activity;
-import android.app.ActionBar;
-import android.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
-import at.fhtw.rssreader.fragments.*;
-import at.fhtw.rssreader.dataobjects.*;
 
+import at.fhtw.rssreader.fragments.RssListFragment;
+import at.fhtw.rssreader.fragments.SubscribeFragment;
 
 
 public class MainActivity extends Activity {
@@ -26,6 +20,7 @@ public class MainActivity extends Activity {
                     .add(R.id.subscribe_fragment, new SubscribeFragment())
                     .add(R.id.container_fragment, new RssListFragment())
                     .commit();
+
         }
     }
 

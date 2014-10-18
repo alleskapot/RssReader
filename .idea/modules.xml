@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RssReader.iml" filepath="$PROJECT_DIR$/RssReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-http/android-http.iml" filepath="$PROJECT_DIR$/android-http/android-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

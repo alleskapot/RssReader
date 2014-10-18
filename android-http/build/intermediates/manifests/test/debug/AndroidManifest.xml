@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="at.diamonddogs.http.test" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="20" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for at.diamonddogs.http.test"
+        android:targetPackage="at.diamonddogs.http.test" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <provider
+            android:name="at.diamonddogs.contentprovider.CacheContentProvider"
+            android:authorities="at.diamonddogs.contentprovider.cachecontentprovider"
+            android:exported="false" >
+        </provider>
+
+        <service android:name="at.diamonddogs.service.CacheService" >
+        </service>
+        <service android:name="at.diamonddogs.service.net.HttpService" >
+        </service>
+    </application>
+
+</manifest>
