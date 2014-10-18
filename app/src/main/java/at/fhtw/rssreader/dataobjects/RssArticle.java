@@ -3,21 +3,23 @@ package at.fhtw.rssreader.dataobjects;
 /**
  * Created by Daniel on 16.10.2014.
  */
-public class RssFeed {
+public class RssArticle {
+    public long articleid;
+    public String title;
+    public String link;
+    public String description;
 
-    public RssFeed(String title, String url, String description) {
+    public RssArticle(String title, String url, String description) {
         this.title = title;
-        this.url = url;
+        this.link = url;
         this.description = description;
     }
 
-    public String title;
-    public String url;
-    public String description;
 
-    public RssFeed(){}
 
-    public RssFeed(String title, String description) {
+    public RssArticle(){}
+
+    public RssArticle(String title, String description) {
         this.title = title;
         this.description = description;
     }
@@ -26,8 +28,12 @@ public class RssFeed {
         return title;
     }
 
+    public long getId() {
+        return articleid;
+    }
+
     public String getUrl() {
-        return url;
+        return link;
     }
 
     public String getDescription() {

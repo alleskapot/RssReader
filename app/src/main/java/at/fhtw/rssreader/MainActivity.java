@@ -7,6 +7,7 @@ import android.view.MenuItem;
 
 import at.fhtw.rssreader.fragments.RssListFragment;
 import at.fhtw.rssreader.fragments.SubscribeFragment;
+import at.fhtw.rssreader.fragments.ArticleListFragment;
 
 
 public class MainActivity extends Activity {
@@ -16,14 +17,17 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.subscribe_fragment, new SubscribeFragment())
-                    .add(R.id.container_fragment, new RssListFragment())
-                    .commit();
-
+            addStartupFragments();
         }
     }
 
+
+    private void addStartupFragments() {
+        getFragmentManager().beginTransaction()
+                .add(R.id.subscribe_fragment, new SubscribeFragment())
+                .add(R.id.container_fragment, new RssListFragment())
+                .commit();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

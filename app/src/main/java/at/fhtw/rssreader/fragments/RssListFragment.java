@@ -16,8 +16,7 @@ import android.widget.Toast;
 import java.util.List;
 
 import at.fhtw.rssreader.R;
-import at.fhtw.rssreader.RssAdapter;
-import at.fhtw.rssreader.RssFeedService;
+import at.fhtw.rssreader.RssArticleAdapter;
 import at.fhtw.rssreader.RssItemService;
 import at.fhtw.rssreader.dataobjects.RssItem;
 
@@ -30,7 +29,7 @@ public class RssListFragment extends Fragment implements AdapterView.OnItemClick
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        rootView = inflater.inflate(R.layout.fragment_rsslist, container, false);
+        rootView = inflater.inflate(R.layout.fragment_rssitemlist, container, false);
         listView = (ListView) rootView.findViewById(R.id.rssListView);
         listView.setOnItemClickListener(this);
 
@@ -46,7 +45,7 @@ public class RssListFragment extends Fragment implements AdapterView.OnItemClick
         protected void onReceiveResult(int resultCode, Bundle resultData) {
             List<RssItem> items = (List<RssItem>) resultData.getSerializable(RssItemService.ITEMS);
             if (items != null) {
-                RssAdapter adapter = new RssAdapter(getActivity(), items);
+                RssArticleAdapter adapter = new RssArticleAdapter(getActivity(), items);
                 listView.setAdapter(adapter);
             } else {
                 Toast.makeText(getActivity(), "An error occured while downloading the rss feed.",
@@ -65,7 +64,7 @@ public class RssListFragment extends Fragment implements AdapterView.OnItemClick
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        RssAdapter adapter = (RssAdapter) parent.getAdapter();
+        RssArticleAdapter adapter = (RssArticleAdapter) parent.getAdapter();
         RssItem item = (RssItem) adapter.getItem(position);
         Uri uri = Uri.parse(item.getLink());
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);

@@ -19,16 +19,16 @@ package at.fhtw.rssreader;
         import android.provider.SyncStateContract;
         import android.util.Log;
 
-        import at.fhtw.rssreader.dataobjects.RssFeed;
+        import at.fhtw.rssreader.dataobjects.RssArticle;
         import at.fhtw.rssreader.dataobjects.RssItem;
 
-public class RssFeedService extends IntentService {
+public class RssArticleService extends IntentService {
 
     public static final String ITEMS = "items";
     public static final String RECEIVER = "receiver";
 
-    public RssFeedService() {
-        super("RssFeedService");
+    public RssArticleService() {
+        super("RssArticleService");
     }
 
     @Override

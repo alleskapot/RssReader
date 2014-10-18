@@ -30,7 +30,7 @@ public class RssItemService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         List<RssItem> rssItems = null;
         try {
-            RssParser parser = new RssParser();
+            RssArticleParser parser = new RssArticleParser();
             rssItems = parser.parse(getInputStream(RSS_LINK));
         } catch (XmlPullParserException e) {
             Log.w(e.getMessage(), e);

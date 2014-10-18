@@ -11,15 +11,15 @@ import at.fhtw.rssreader.R;
 /**
  * Created by Daniel on 16.10.2014.
  */
-public class FeedListFragment extends Fragment {
+public class ArticleListFragment extends Fragment {
 
-    public FeedListFragment() {
+    public ArticleListFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_feedlist, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_articlelist, container, false);
         return rootView;
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Users/Daniel/AndroidStudioProjects/RssReader/android-http/build/intermediates/bundles/debug/res/values-v11/values.xml -->
+    <!-- From: file:/C:/Users/Rene/RSSFINAL/RSSReader/android-http/build/intermediates/bundles/debug/res/values-v11/values.xml -->
     <eat-comment />
 
     <style name="AppTheme" parent="android:Theme.Holo.Light" />

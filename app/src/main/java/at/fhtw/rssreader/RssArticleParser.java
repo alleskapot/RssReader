@@ -15,10 +15,10 @@ package at.fhtw.rssreader;
 
         import android.util.Xml;
 
-        import at.fhtw.rssreader.dataobjects.RssFeed;
+        import at.fhtw.rssreader.dataobjects.RssArticle;
         import at.fhtw.rssreader.dataobjects.RssItem;
-
-public class RssParser {
+// Parser für http://RSSLINK.com/news/index.rss
+public class RssArticleParser {
 
     // We don't use namespaces
     private final String ns = null;

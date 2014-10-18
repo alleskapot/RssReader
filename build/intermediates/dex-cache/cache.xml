@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1-3182c0393e8435790363880b8eff5ef6e0209097.jar"
+        jar="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\exploded-aar\RSSReader\android-http\unspecified\libs\slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2a65e18009391ca59886fb5b0cf5e9f43f01c105"/>
+    <item
+        dex="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\pre-dexed\debug\httpmime-4.2.2-20f4a44afe108cad475eabfaf82a0adbcd8f17d1.jar"
+        jar="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\exploded-aar\RSSReader\android-http\unspecified\libs\httpmime-4.2.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="92b7ae91cb55150192341962dd7254ef898768ca"/>
+    <item
+        dex="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.6.1-jar-with-dependencies-85f6c84f28c2b1b7994254a938cc80a08c13a352.jar"
+        jar="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\exploded-aar\RSSReader\android-http\unspecified\libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e366556fc3373904652456f932f18e2c1b1e0154"/>
+    <item
+        dex="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\pre-dexed\debug\slf4j-api-1.7.6-4a5290e4d34ddbfad1e87e6f0b78038cdbcfcf39.jar"
+        jar="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\exploded-aar\RSSReader\android-http\unspecified\libs\slf4j-api-1.7.6.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4614fcda4104175f78563541710a047eb26dc452"/>
+    <item
+        dex="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\pre-dexed\debug\classes-d5d174fdb38c2c3257e6105781ba4310d640768c.jar"
+        jar="C:\Users\Rene\RSSFINAL\RSSReader\app\build\intermediates\exploded-aar\RSSReader\android-http\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="fdab7749291792ae69f7311092b3c6579fe8ce43"/>
+
+</pre-dex-items>

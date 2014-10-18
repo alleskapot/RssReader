@@ -10,17 +10,16 @@ import android.widget.BaseAdapter;
     import android.content.Context;
     import android.view.View;
     import android.view.ViewGroup;
-    import android.widget.BaseAdapter;
-    import android.widget.TextView;
+import android.widget.TextView;
 
 import at.fhtw.rssreader.dataobjects.RssItem;
 
-public class RssAdapter extends BaseAdapter {
+public class RssArticleAdapter extends BaseAdapter {
 
         private final List<RssItem> items;
         private final Context context;
 
-        public RssAdapter(Context context, List<RssItem> items) {
+        public RssArticleAdapter(Context context, List<RssItem> items) {
             this.items = items;
             this.context = context;
         }
@@ -44,7 +43,7 @@ public class RssAdapter extends BaseAdapter {
         public View getView(int position, View convertView, ViewGroup parent) {
             ViewHolder holder;
             if (convertView == null) {
-                convertView = View.inflate(context, R.layout.fragment_rsslist, null);
+                convertView = View.inflate(context, R.layout.fragment_rssitemlist, null);
                 holder = new ViewHolder();
                 holder.itemTitle = (TextView) convertView.findViewById(R.id.itemTitle);
                 convertView.setTag(holder);
