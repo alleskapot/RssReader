@@ -1,4 +1,4 @@
-package at.fhtw.rssreader;
+/*package at.fhtw.rssreader;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,10 +18,9 @@ import at.fhtw.rssreader.dataobjects.RssItem;
 
 public class RssItemService extends IntentService {
 
-    private static final String RSS_LINK = "http://www.pcworld.com/index.rss";
-    public static final String ITEMS = "items";
-    public static final String RECEIVER = "receiver";
 
+
+    public String url;
     public RssItemService() {
         super("RssItemService");
     }
@@ -31,15 +30,15 @@ public class RssItemService extends IntentService {
         List<RssItem> rssItems = null;
         try {
             RssParser parser = new RssParser();
-            rssItems = parser.parse(getInputStream(RSS_LINK));
+            rssItems = parser.parse(getInputStream(url));
         } catch (XmlPullParserException e) {
             Log.w(e.getMessage(), e);
         } catch (IOException e) {
             Log.w(e.getMessage(), e);
         }
         Bundle bundle = new Bundle();
-        bundle.putSerializable(ITEMS, (Serializable) rssItems);
-        ResultReceiver receiver = intent.getParcelableExtra(RECEIVER);
+        bundle.putSerializable("items", (Serializable) rssItems);
+        ResultReceiver receiver = intent.getParcelableExtra("itemreceiver");
         receiver.send(0, bundle);
     }
 
@@ -51,4 +50,4 @@ public class RssItemService extends IntentService {
             return null;
         }
     }
-}
+}*/

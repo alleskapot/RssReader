@@ -18,7 +18,7 @@ import java.util.List;
 import at.fhtw.rssreader.R;
 import at.fhtw.rssreader.RssAdapter;
 import at.fhtw.rssreader.RssFeedService;
-import at.fhtw.rssreader.RssItemService;
+//import at.fhtw.rssreader.RssItemService;
 import at.fhtw.rssreader.dataobjects.RssItem;
 
 public class RssListFragment extends Fragment implements AdapterView.OnItemClickListener {
@@ -44,7 +44,7 @@ public class RssListFragment extends Fragment implements AdapterView.OnItemClick
         @SuppressWarnings("unchecked")
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
-            List<RssItem> items = (List<RssItem>) resultData.getSerializable(RssItemService.ITEMS);
+            List<RssItem> items = (List<RssItem>) resultData.getSerializable("items");
             if (items != null) {
                 RssAdapter adapter = new RssAdapter(getActivity(), items);
                 listView.setAdapter(adapter);
@@ -55,11 +55,11 @@ public class RssListFragment extends Fragment implements AdapterView.OnItemClick
         };
     };
 
-    private void startService() {
+    /*private void startService() {
         Intent intent = new Intent(getActivity(), RssItemService.class);
-        intent.putExtra(RssItemService.RECEIVER, resultReceiver);
+        intent.putExtra("itemreceiver", resultReceiver);
         getActivity().startService(intent);
-    }
+    }*/
 
 
 

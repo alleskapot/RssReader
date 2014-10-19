@@ -11,18 +11,19 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:layout_toStartOf="@+id/button"
+        android:id="@+id/linkInput"
+        android:layout_toStartOf="@+id/subscribebutton"
         android:singleLine="true"
-        android:layout_alignBottom="@+id/button"
+        android:layout_alignBottom="@+id/subscribebutton"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add"
-        android:id="@+id/button"
+        android:id="@+id/subscribebutton"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+
         android:enabled="true" />
 </RelativeLayout>

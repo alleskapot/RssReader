@@ -2,29 +2,29 @@
 <merger version="2" >
 
     <dataSet config="debug" >
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res" >
+        <source path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res" >
             <file
                 name="ic_launcher"
-                path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-hdpi-v4\ic_launcher.png"
+                path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-hdpi-v4\ic_launcher.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-ldpi-v4\ic_launcher.png"
+                path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-ldpi-v4\ic_launcher.png"
                 qualifiers="ldpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-mdpi-v4\ic_launcher.png"
+                path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-mdpi-v4\ic_launcher.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\ic_launcher.png"
+                path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\ic_launcher.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
-                path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\values\values.xml"
+                path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res\values\values.xml"
                 qualifiers="" >
 
                 <style
@@ -35,7 +35,7 @@
                 </string>
             </file>
             <file
-                path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\values-v11\values.xml"
+                path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res\values-v11\values.xml"
                 qualifiers="v11" >
 
                 <style
@@ -43,7 +43,7 @@
                     parent="android:Theme.Holo.Light" />
             </file>
             <file
-                path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\values-v14\values.xml"
+                path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\intermediates\bundles\debug\res\values-v14\values.xml"
                 qualifiers="v14" >
 
                 <style
@@ -53,9 +53,9 @@
         </source>
     </dataSet>
     <dataSet config="main" >
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\src\androidTest\res" />
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\generated\res\rs\test\debug" />
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\android-http\build\generated\res\generated\test\debug" />
+        <source path="C:\Users\Rene\FinalRSS\RssReader\android-http\src\androidTest\res" />
+        <source path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\generated\res\rs\test\debug" />
+        <source path="C:\Users\Rene\FinalRSS\RssReader\android-http\build\generated\res\generated\test\debug" />
     </dataSet>
 
 </merger>

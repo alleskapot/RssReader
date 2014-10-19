@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\pre-dexed\debug\httpmime-4.2.2-917c3274c05edaa18247730cc4dda693f7b37ab4.jar"
+        jar="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\httpmime-4.2.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="92b7ae91cb55150192341962dd7254ef898768ca"/>
+    <item
+        dex="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1-83a8339acf5e37536f80a9e5f5bda28364afa9fb.jar"
+        jar="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2a65e18009391ca59886fb5b0cf5e9f43f01c105"/>
+    <item
+        dex="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\pre-dexed\debug\slf4j-api-1.7.6-c9366f3a1b8648c71fd8f73d458110b6ed5d953d.jar"
+        jar="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\slf4j-api-1.7.6.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4614fcda4104175f78563541710a047eb26dc452"/>
+    <item
+        dex="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\pre-dexed\debug\classes-07d88a8b04aa86865a44ddb85803eaefca11bbaa.jar"
+        jar="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3d9c92446911125af15b5e347b1cc49e3bda83ca"/>
+    <item
+        dex="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.6.1-jar-with-dependencies-23f700b788e5e93d9f4aacda3c4a31a52c6d8846.jar"
+        jar="C:\Users\Rene\FinalRSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e366556fc3373904652456f932f18e2c1b1e0154"/>
+
+</pre-dex-items>
