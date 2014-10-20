@@ -7,23 +7,16 @@ The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
 so manually move them:
 
-* .gitignore
-* build.xml
-* ic_launcher-web.png
-* proguard-project.txt
+* README.markdown
+* proguard.cfg
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => android-http\src\main\AndroidManifest.xml
-* libs\httpmime-4.2.2.jar => android-http\libs\httpmime-4.2.2.jar
-* libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar => android-http\libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar
-* libs\slf4j-android-1.6.1-RC1.jar => android-http\libs\slf4j-android-1.6.1-RC1.jar
-* libs\slf4j-api-1.7.6.jar => android-http\libs\slf4j-api-1.7.6.jar
-* res\ => android-http\src\main\res\
-* src\ => android-http\src\main\java\
+* AndroidManifest.xml => SAXRSSReader\src\main\AndroidManifest.xml
+* src\ => SAXRSSReader\src\main\java\
 
 Next Steps:
 -----------

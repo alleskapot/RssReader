@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import at.fhtw.rssreader.fragments.RssListFragment;
+import at.fhtw.rssreader.fragments.FeedListFragment;
 import at.fhtw.rssreader.fragments.SubscribeFragment;
 
 
@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.subscribe_fragment, new SubscribeFragment())
-                    .add(R.id.container_fragment, new RssListFragment())
+                    .add(R.id.container_fragment, new FeedListFragment())
                     .commit();
 
         }

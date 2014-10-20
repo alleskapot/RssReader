@@ -4,23 +4,22 @@ package at.fhtw.rssreader;
  * Created by Marco on 17.10.2014.
  */
 
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
-    import java.util.List;
-    import android.content.Context;
-    import android.view.View;
-    import android.view.ViewGroup;
-    import android.widget.BaseAdapter;
-    import android.widget.TextView;
+import java.util.List;
 
-import at.fhtw.rssreader.dataobjects.RssItem;
+import nl.matshofman.saxrssreader.RssFeed;
 
-public class RssAdapter extends BaseAdapter {
+public class RssFeedAdapter extends BaseAdapter {
 
-        private final List<RssItem> items;
+        private final List<RssFeed> items;
         private final Context context;
 
-        public RssAdapter(Context context, List<RssItem> items) {
+        public RssFeedAdapter(Context context, List<RssFeed> items) {
             this.items = items;
             this.context = context;
         }
@@ -44,14 +43,16 @@ public class RssAdapter extends BaseAdapter {
         public View getView(int position, View convertView, ViewGroup parent) {
             ViewHolder holder;
             if (convertView == null) {
-                convertView = View.inflate(context, R.layout.fragment_rsslist, null);
+                convertView = View.inflate(context, R.layout.rssitem, null);
                 holder = new ViewHolder();
                 holder.itemTitle = (TextView) convertView.findViewById(R.id.itemTitle);
+                holder.itemDescription = (TextView) convertView.findViewById(R.id.itemDescription);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
             holder.itemTitle.setText(items.get(position).getTitle());
+            holder.itemDescription.setText(items.get(position).getDescription());
 
 
             return convertView;
@@ -59,6 +60,7 @@ public class RssAdapter extends BaseAdapter {
 
         static class ViewHolder {
             TextView itemTitle;
+            TextView itemDescription;
         }
     }
 

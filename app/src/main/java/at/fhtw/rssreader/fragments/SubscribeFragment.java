@@ -11,19 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import at.fhtw.rssreader.R;
 import at.fhtw.rssreader.RssFeedService;
-import at.fhtw.rssreader.dataobjects.RssFeed;
+import nl.matshofman.saxrssreader.RssFeed;
 
 public class SubscribeFragment extends Fragment  implements View.OnClickListener{
 
     Button Sub;
     EditText link;
+    ListView list;
+
     View rootView;
     public SubscribeFragment() {
     }
@@ -39,6 +39,7 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
 
         link = (EditText) rootView.findViewById(R.id.linkInput);
 
+        list = (ListView) rootView.findViewById(R.id.rssListView);
 
         return rootView;
     }
@@ -71,17 +72,18 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
             Log.v("myApp", "Receiving Result");
-            List<RssFeed> items = (List<RssFeed>) resultData.getSerializable("feeds");
+            RssFeed feed = (RssFeed) resultData.getParcelable("feed");
 
-            Sub.setText("URL");
-            //TODO: Add this feed item to an Listview and show it ADAPTER
-           /* if (items != null) {
-                RssFeedAdapter adapter = new RssFeedAdapter(getActivity(), "feed);
-                listView.setAdapter(adapter);
-            } else {
-                Toast.makeText(getActivity(), "An error occured while downloading the rss feed.",
-                        Toast.LENGTH_LONG).show();
-            }*/
+           if (feed != null) {
+               FeedListFragment listFragment = (FeedListFragment)getFragmentManager().findFragmentById(R.id.container_fragment);
+               //listFragment.setArguments(resultData);
+               listFragment.addToList(feed);
+               /*RssFeedAdapter adapter = new RssFeedAdapter(getActivity(), feed.getRssItems());
+               list.setAdapter(adapter);*/
+           } else {
+               Toast.makeText(getActivity(), "An error occured while downloading the rss feed.",
+                       Toast.LENGTH_LONG).show();
+           }
         };
     };
 }
