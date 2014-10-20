@@ -33,8 +33,8 @@ public class RssFeedService extends IntentService {
         Log.v("myApp", "Handling Service");
         RssFeed feed = null;
 
-        //String link = intent.getStringExtra("url");
-        String link = "http://derstandard.at/?page=rss&ressort=seite1";
+        String link = intent.getStringExtra("url");
+        //String link = "http://derstandard.at/?page=rss&ressort=seite1";
         try {
             URL url = new URL(link);
             feed = RssReader.read(url);

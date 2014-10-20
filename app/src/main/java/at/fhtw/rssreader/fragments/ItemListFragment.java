@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import at.fhtw.rssreader.R;
@@ -28,9 +27,8 @@ public class ItemListFragment extends Fragment {
     private List<RssItem> allItems = new ArrayList<RssItem>();
     private RssItemAdapter adapter;
     public ItemListFragment() {
+        adapter = new RssItemAdapter(getActivity(), allItems);
     }
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,42 +36,20 @@ public class ItemListFragment extends Fragment {
         //rootView = inflater.inflate(R.layout.fragment_itemlist, container, false);
         rootView = inflater.inflate(R.layout.fragment_itemlist, container, false);
         itemList = (ListView) rootView.findViewById(R.id.itemList);
-        adapter = new RssItemAdapter(getActivity(), allItems);
-
-
 
         adapter = new RssItemAdapter(getActivity(), allItems);
         itemList.setAdapter(adapter);
 
-     // rssItems.add(testItem);
-        adapter.notifyDataSetChanged();
+        // rssItems.add(testItem);
+        //adapter.notifyDataSetChanged();
         return rootView;
     }
 
     public void addItems(RssFeed feed){
         Log.v("Rss Reader", "Adding Items to List");
-        List<RssItem> myitems = new ArrayList<RssItem>();
-        myitems.addAll((ArrayList<RssItem>)feed.getRssItems());
 
-        /*RssItem testItem = new RssItem();
+        allItems.addAll((ArrayList<RssItem>)feed.getRssItems());
 
-        testItem.setTitle("TESTTITEL");
-        testItem.setDescription("ENDLICH!!");
-        allItems.add(testItem);*/
-        //adapter.notifyDataSetChanged();
-        Iterator<RssItem> it = myitems.iterator();
-        while(it.hasNext())
-        {
-            RssItem rs = it.next();
-            //Do something with obj
-            Log.v("Rss Reader", rs.getTitle().toString());
-
-
-            allItems.add(rs);
-        }
-       //rssItems.clear();
-       //rssItems.addAll(items.getRssItems());
-
-        //adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();
     }
 }

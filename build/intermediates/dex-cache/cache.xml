@@ -2,40 +2,16 @@
 <pre-dex-items>
 
     <item
-        dex="C:\Users\Rene\RSS\RssReader\app\build\intermediates\pre-dexed\debug\classes-8a8fce5609e043795d1462b8ebb99111b10cc7d1.jar"
-        jar="C:\Users\Rene\RSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\classes.jar"
+        dex="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\pre-dexed\debug\classes-f74f0be91a495a3a14e374144ddbdd193ee163e3.jar"
+        jar="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\exploded-aar\RssReader\SAXRSSReader\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="6bd0eb8ddcdfaf5da8b809aadb13bb690291926d"/>
+        sha1="cdf5c7c0a4eb69f4262593b2d1d19c32768da437"/>
     <item
-        dex="C:\Users\Rene\RSS\RssReader\app\build\intermediates\pre-dexed\debug\classes-94812fdcf3e99dd904b5f3c7ad17500336a5b21e.jar"
-        jar="C:\Users\Rene\RSS\RssReader\app\build\intermediates\exploded-aar\RssReader\SAXRSSReader\unspecified\classes.jar"
+        dex="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\pre-dexed\debug\classes-20fc21e3000846dd2b4832f2fcd1f0c92306c38d.jar"
+        jar="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="287e4101c94baaf2e50442ea6de44728e9198f9b"/>
-    <item
-        dex="C:\Users\Rene\RSS\RssReader\app\build\intermediates\pre-dexed\debug\httpmime-4.2.2-013ea57162e9620298476bb1a6c4b80640026d8d.jar"
-        jar="C:\Users\Rene\RSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\httpmime-4.2.2.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="92b7ae91cb55150192341962dd7254ef898768ca"/>
-    <item
-        dex="C:\Users\Rene\RSS\RssReader\app\build\intermediates\pre-dexed\debug\slf4j-api-1.7.6-86ea23cf8d440b7530b1fd81c29090b18c33b1a4.jar"
-        jar="C:\Users\Rene\RSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\slf4j-api-1.7.6.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="4614fcda4104175f78563541710a047eb26dc452"/>
-    <item
-        dex="C:\Users\Rene\RSS\RssReader\app\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1-d3495311ba4cb39ada35ed7de785a88c428a4937.jar"
-        jar="C:\Users\Rene\RSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\slf4j-android-1.6.1-RC1.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="2a65e18009391ca59886fb5b0cf5e9f43f01c105"/>
-    <item
-        dex="C:\Users\Rene\RSS\RssReader\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.6.1-jar-with-dependencies-ce4e77978ac45fd3bb5b243c0ce0aa05a1aed088.jar"
-        jar="C:\Users\Rene\RSS\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="e366556fc3373904652456f932f18e2c1b1e0154"/>
+        sha1="57d3608e70da826eb62559479615ae3d8542b98d"/>
 
 </pre-dex-items>
