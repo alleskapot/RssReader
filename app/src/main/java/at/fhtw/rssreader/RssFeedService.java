@@ -54,24 +54,22 @@ public class RssFeedService extends IntentService {
         Log.v("myApp", "Handling Service");
         List<RssFeed> myfeed = new ArrayList();
 
-       RssFeed onefeed = new RssFeed();
-      onefeed.url = intent.getStringExtra("url");
+        //String link = intent.getStringExtra("url");
+String link = "http://derstandard.at/?page=rss&ressort=seite1";
+      /*onefeed.url = intent.getStringExtra("url");
+
         onefeed.description = "dies ist ein test";
         onefeed.title ="wut";
-        Log.v("myApp", "Adding Feed to List");
         myfeed.add(onefeed);
-        Log.v("myApp", "Building Result");
         Bundle bundle = new Bundle();
-        Log.v("myApp", "Serialize Result");
-        bundle.putSerializable("feed", (Serializable)myfeed);
-        Log.v("myApp", "Parse Receiver Result");
+        bundle.putSerializable("feeds", (Serializable)myfeed);
         ResultReceiver feedinforeceiver = intent.getParcelableExtra("feedreiceiver");
-        Log.v("myApp", "Sending Result");
-        feedinforeceiver.send(0, bundle);
-        /*
-        try {
-            URL url = new URL("http://www.pcworld.com/index.rss");
+        feedinforeceiver.send(0, bundle);*/
 
+
+
+        try {
+            URL url = new URL(link);
 
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
             factory.setNamespaceAware(false);
@@ -80,31 +78,52 @@ public class RssFeedService extends IntentService {
 
 
             boolean isChannel = false;
-
+            int count = 0;
+            RssFeed onefeed = new RssFeed();
             int eventT = xpp.getEventType();
             while (eventT != XmlPullParser.END_DOCUMENT) {
+                count++;
                 if (eventT == XmlPullParser.START_TAG) {
-                    if(xpp.getName().equalsIgnoreCase("item"))
-                        break;
+                    /*if(xpp.getName().equalsIgnoreCase("item"))
+                        break;*/
 
                     if (xpp.getName().equalsIgnoreCase("channel")) {
                         isChannel = true;
                     } else if (xpp.getName().equalsIgnoreCase("title")) {
                         if (isChannel)
-                            myfeed.title = xpp.nextText(); //extract the headline
+                            onefeed.title = xpp.nextText(); //extract the headline
                     } else if (xpp.getName().equalsIgnoreCase("link")) {
                         if (isChannel)
-                            myfeed.url = xpp.nextText();
+                            onefeed.url = xpp.nextText();
                     } else if (xpp.getName().equalsIgnoreCase("description")) {
                         if (isChannel)
-                            myfeed.description = xpp.nextText();
+                            onefeed.description = xpp.nextText();
                     }
+                }else if(eventT==XmlPullParser.END_TAG && xpp.getName().equalsIgnoreCase("channel")){
+                    isChannel=false;
+
                 }
+                }
+                Log.v("myApp", "Durchäufe: " + count);
+                Log.v("myApp", "Titel: " + onefeed.title);
+
+                Log.v("myApp", "Link: " + onefeed.url);
+
+                Log.v("myApp", "Description: " + onefeed.description);
 
                 eventT = xpp.next(); //move to next element
-            }
+            } catch (MalformedURLException e1) {
+            e1.printStackTrace();
+        } catch (XmlPullParserException e2) {
+            e2.printStackTrace();
+        } catch (IOException e3) {
+            e3.printStackTrace();
+        }
 
-            boolean insideItem = false;
+
+
+
+            /*boolean insideItem = false;
 
             // Returns the type of current event: START_TAG, END_TAG, etc..
             int eventType = xpp.getEventType();
@@ -125,23 +144,16 @@ public class RssFeedService extends IntentService {
                 }
 
                 eventType = xpp.next(); //move to next element
-            }
+            }*/
 
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        }
 
-        // Binding data
+        //End Try
+
+       /*Binding data
         ArrayAdapter adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, headlines);
 
-        setListAdapter(adapter);
+        setListAdapter(adapter);*/
 
 
     }
@@ -151,8 +163,7 @@ public class RssFeedService extends IntentService {
         } catch (IOException e) {
             return null;
         }
-    }*/
+    }
 
    }
 
-}
