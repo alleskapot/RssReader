@@ -76,16 +76,16 @@ public class FeedListFragment extends Fragment implements AdapterView.OnItemClic
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         RssFeed feed = (RssFeed) adapter.getItem(position);
         Log.v("Rss Reader", "Feed click gecaptured!");
-
+        Log.v("Rss Reader", feed.getTitle().toString());
         RssItem test = feed.getRssItems().get(0);
 
         ItemListFragment listFragment = new ItemListFragment();
         getFragmentManager().beginTransaction().replace(R.id.container_fragment, listFragment).addToBackStack(null).commit();
 
-        Log.v("Rss Reader", "Fragments replaced");
+        Log.v("Rss Reader", "Changed Fragment");
 
         //listFragment.setArguments(resultData);
-        listFragment.addItems(feed.getRssItems());
+        listFragment.addItems(feed);
         /*Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);*/
     }

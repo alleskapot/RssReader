@@ -52,7 +52,7 @@ public class RssFeedAdapter extends BaseAdapter {
                 holder = (ViewHolder) convertView.getTag();
             }
             holder.itemTitle.setText(items.get(position).getTitle());
-            holder.itemDescription.setText(items.get(position).getDescription());
+           holder.itemDescription.setText(items.get(position).getDescription());
 
 
             return convertView;

@@ -10,7 +10,19 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
-        android:id="@+id/datailedItemTitle"
+        android:id="@+id/detailedItemTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Small Text"
+        android:textSize="9dp"
+        android:id="@+id/detailedItemDescription"
+        android:layout_below="@+id/detailedItemTitle"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>

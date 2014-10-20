@@ -44,18 +44,20 @@ public class RssItemAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = View.inflate(context, R.layout.detaileditem, null);
             holder = new ViewHolder();
-            holder.detailedItemTitle = (TextView) convertView.findViewById(R.id.itemTitle);
+            holder.detailedItemDescription = (TextView) convertView.findViewById(R.id.detailedItemDescription);
+            holder.detailedItemTitle = (TextView) convertView.findViewById(R.id.detailedItemTitle);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
         holder.detailedItemTitle.setText(items.get(position).getTitle());
-
+        holder.detailedItemDescription.setText(items.get(position).getDescription());
 
         return convertView;
     }
 
     static class ViewHolder {
         TextView detailedItemTitle;
+        TextView detailedItemDescription;
     }
 }
