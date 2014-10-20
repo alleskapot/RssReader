@@ -8,8 +8,7 @@ import android.app.IntentService;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.ResultReceiver;
-
-
+import android.util.Log;
 
 
 import org.apache.http.HttpEntity;
@@ -32,7 +31,11 @@ import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 import at.fhtw.rssreader.dataobjects.RssFeed;
 import at.fhtw.rssreader.dataobjects.RssItem;
@@ -48,16 +51,22 @@ public class RssFeedService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
+        Log.v("myApp", "Handling Service");
+        List<RssFeed> myfeed = new ArrayList();
 
-        RssFeed myfeed = new RssFeed();
-      myfeed.url = intent.getStringExtra("url");
-        myfeed.description = "dies ist ein test";
-        myfeed.title ="wut";
-
-
+       RssFeed onefeed = new RssFeed();
+      onefeed.url = intent.getStringExtra("url");
+        onefeed.description = "dies ist ein test";
+        onefeed.title ="wut";
+        Log.v("myApp", "Adding Feed to List");
+        myfeed.add(onefeed);
+        Log.v("myApp", "Building Result");
         Bundle bundle = new Bundle();
+        Log.v("myApp", "Serialize Result");
         bundle.putSerializable("feed", (Serializable)myfeed);
+        Log.v("myApp", "Parse Receiver Result");
         ResultReceiver feedinforeceiver = intent.getParcelableExtra("feedreiceiver");
+        Log.v("myApp", "Sending Result");
         feedinforeceiver.send(0, bundle);
         /*
         try {

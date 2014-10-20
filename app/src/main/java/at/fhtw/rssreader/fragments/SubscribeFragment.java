@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.ResultReceiver;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,13 +48,14 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
                 String probe;
                 //Call RssFeedService
                 Sub.setText("Service starting");
-                startService(link.getText().toString());
+                startmyService(link.getText().toString());
 
                 break;
         }
     }
 
-    private void startService(String link) {
+    private void startmyService(String link) {
+        Log.v("myApp", "Starting Service");
         Intent intent = new Intent(getActivity(), RssFeedService.class);
 
         intent.putExtra("feedreiceiver", feedinfoReceiver);
@@ -67,7 +69,7 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
         @SuppressWarnings("unchecked")
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
-
+            Log.v("myApp", "Receiving Result");
             RssFeed feed = (RssFeed) resultData.getSerializable("feed");
             Sub.setText("URL");
             //TODO: Add this feed item to an Listview and show it ADAPTER
