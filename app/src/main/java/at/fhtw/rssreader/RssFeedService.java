@@ -16,9 +16,11 @@ import org.xml.sax.SAXException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 
-import nl.matshofman.saxrssreader.RssFeed;
-import nl.matshofman.saxrssreader.RssReader;
+import at.fhtw.rssreader.dao.DaoSession;
+import at.fhtw.rssreader.dao.RssFeed;
+import at.fhtw.rssreader.dao.RssReader;
 
 
 public class RssFeedService extends IntentService {
@@ -38,13 +40,36 @@ public class RssFeedService extends IntentService {
         try {
             URL url = new URL(link);
             feed = RssReader.read(url);
+            //Bugfix
+            feed.setLink(link);
+
+            DaoSession daoSession = MainActivity.getDaoSession();
+
+            //daoSession.getRssFeedDao().insert(feed);
+
+            ArrayList<RssFeed> list = (ArrayList<RssFeed>)daoSession.getRssFeedDao().loadAll();
 
             //Logging the Feed
-            Log.v("Rss Reader","---------------------------------------");
+            Log.v("Rss Reader", "---------------------------------------");
             Log.v("Rss Reader","Link: "+feed.getLink());
             Log.v("Rss Reader","Title: "+feed.getTitle());
             Log.v("Rss Reader","Description: "+feed.getDescription());
             Log.v("Rss Reader","---------------------------------------");
+
+            if (list.contains(feed)) {
+                Log.v("Rss Reader", "Element already exists");
+            } else {
+                for (int i = 0; i < list.size(); i++) {
+                    Log.i("Rss Reader", "IN DB: " + list.get(i).getTitle());
+                }
+
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("feed", (Parcelable) feed);
+                ResultReceiver feedinforeceiver = intent.getParcelableExtra("feedreiceiver");
+                feedinforeceiver.send(0, bundle);
+            }
+
+
 
             /*ArrayList<RssItem> rssItems = feed.getRssItems();
             for (RssItem rssItem : rssItems) {
@@ -57,11 +82,6 @@ public class RssFeedService extends IntentService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        Bundle bundle = new Bundle();
-        bundle.putParcelable("feed", (Parcelable) feed);
-        ResultReceiver feedinforeceiver = intent.getParcelableExtra("feedreiceiver");
-        feedinforeceiver.send(0, bundle);
     }
 }
 

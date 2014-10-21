@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import nl.matshofman.saxrssreader.RssFeed;
+import at.fhtw.rssreader.dao.RssFeed;
 
 public class RssFeedAdapter extends BaseAdapter {
 

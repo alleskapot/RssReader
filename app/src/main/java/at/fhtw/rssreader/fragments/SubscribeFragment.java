@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import at.fhtw.rssreader.R;
 import at.fhtw.rssreader.RssFeedService;
-import nl.matshofman.saxrssreader.RssFeed;
+import at.fhtw.rssreader.dao.RssFeed;
 
 public class SubscribeFragment extends Fragment  implements View.OnClickListener{
 

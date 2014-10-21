@@ -13,8 +13,9 @@ import java.util.List;
 
 import at.fhtw.rssreader.R;
 import at.fhtw.rssreader.RssItemAdapter;
-import nl.matshofman.saxrssreader.RssFeed;
-import nl.matshofman.saxrssreader.RssItem;
+import at.fhtw.rssreader.dao.RssFeed;
+import at.fhtw.rssreader.dao.RssItem;
+
 
 /**
  * Created by Daniel on 16.10.2014.

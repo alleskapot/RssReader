@@ -6,7 +6,13 @@
         jar="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\exploded-aar\RssReader\SAXRSSReader\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="cdf5c7c0a4eb69f4262593b2d1d19c32768da437"/>
+        sha1="f00444034901710a91af35c0714712ebdeb73a4f"/>
+    <item
+        dex="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\pre-dexed\debug\greendao-1.3.7-37791fbb0f7954e5502ef92f2468f3fdc8846c8f.jar"
+        jar="C:\Users\Daniel\AndroidStudioProjects\RssReader\greendao-1.3.7\greendao-1.3.7.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="dda08161d004c4df96938da6909f1c2b96cd33c8"/>
     <item
         dex="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\pre-dexed\debug\classes-20fc21e3000846dd2b4832f2fcd1f0c92306c38d.jar"
         jar="C:\Users\Daniel\AndroidStudioProjects\RssReader\app\build\intermediates\exploded-aar\RssReader\android-http\unspecified\classes.jar"

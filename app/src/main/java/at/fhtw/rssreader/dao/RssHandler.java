@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package nl.matshofman.saxrssreader;
+package at.fhtw.rssreader.dao;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
@@ -32,7 +32,7 @@ public class RssHandler extends DefaultHandler {
 	public void startDocument() {
 		rssFeed = new RssFeed();
 	}
-	
+
 	/**
 	 * Return the parsed RssFeed with it's RssItems
 	 * @return

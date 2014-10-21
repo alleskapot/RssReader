@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import nl.matshofman.saxrssreader.RssItem;
+import at.fhtw.rssreader.dao.RssItem;
+
 
 /**
  * Created by Daniel on 20.10.2014.
