@@ -36,502 +36,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91e777ca-8292-4c18-b628-4f11c072c2f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/greendao-generator-1.3.1/greendao-generator-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/adapter/FeedListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/listener/FeedListChoiceModeListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeedContentProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItemContentProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/greendao-generator-1.3.1/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/freemarker_2_3_20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/greendao_generator_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/rssfeed_actionmode.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/rssitem_actionmode.xml" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\.idea\libraries\DaoGenerator_1_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\.idea\libraries\freemarker_2_3_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\.idea\libraries\httpmime_4_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\.idea\libraries\ksoap2_android_assembly_2_6_1_jar_with_dependencies.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\.idea\libraries\slf4j_android_1_6_1_RC1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\.idea\libraries\slf4j_api_1_7_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\build\intermediates\classes\release\nl\matshofman\saxrssreader\RssFeed$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\build\intermediates\classes\release\nl\matshofman\saxrssreader\RssFeed.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\build\intermediates\classes\release\nl\matshofman\saxrssreader\RssHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\build\intermediates\classes\release\nl\matshofman\saxrssreader\RssItem$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\build\intermediates\classes\release\nl\matshofman\saxrssreader\RssItem.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\android-http.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\generated\source\buildConfig\debug\at\diamonddogs\http\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\generated\source\buildConfig\release\at\diamonddogs\http\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\generated\source\buildConfig\test\debug\at\diamonddogs\http\test\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\generated\source\r\debug\at\diamonddogs\http\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\generated\source\r\release\at\diamonddogs\http\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\generated\source\r\test\debug\at\diamonddogs\http\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\generated\source\r\test\debug\at\diamonddogs\http\test\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\libs\httpmime-4.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\libs\slf4j-android-1.6.1-RC1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\libs\slf4j-api-1.7.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-hdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-ldpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-mdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\values-v11\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\values-v14\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\debug\res\values\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\libs\httpmime-4.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\libs\slf4j-android-1.6.1-RC1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\libs\slf4j-api-1.7.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\res\drawable-hdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\res\drawable-ldpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\res\drawable-mdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\res\drawable-xhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\res\values-v11\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\res\values-v14\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\bundles\release\res\values\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\android\support\v4\util\LruCache.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\builder\WebRequestBuilder$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\builder\WebRequestBuilder$ConnectionTimeout.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\builder\WebRequestBuilder$ReadTimeout.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\builder\WebRequestBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\builder\WebRequestBuilderConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\builder\WebRequestBuilderDefaultConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\contentprovider\AbstractDefaultContentProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\contentprovider\CacheContentProvider$CacheContentProviderDatabaseHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\contentprovider\CacheContentProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\ReplyAdapter$Status.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\ReplyAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\database\DataBaseAdapterCacheInformation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\database\DatabaseAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\database\Query.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\parcelable\ParcelableAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterTempFile$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterTempFile.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebReply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebReply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebRequest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\soap\SoapByteArrayAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\soap\SoapReplyAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\adapter\soap\SoapRequestAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\CacheInformation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\NonTimeCriticalTask$PRIORITY.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\NonTimeCriticalTask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\NonTimeCriticalTaskQueueDefaultConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\NonTimeCriticalWebRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\Reply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\Request.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\SoapReply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\SoapRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\TempFile.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\WebReply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\WebRequest$Type.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\dataobjects\WebRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\parser\JSONArrayProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\parser\JSONObjectProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\data\parser\ParserProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\exception\CacheManagerException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\exception\DatabaseAdapterException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\exception\ProcessorExeception.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\exception\ServiceException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\exception\WebClientException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\http\BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\http\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\http\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\http\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\http\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\http\R.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClient$DownloadProgressListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClient$HTTPStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClient$WebClientReplyListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClient.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClientDefaultHttpClient.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClientFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClientHttpURLConnection$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\WebClientHttpURLConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\ssl\CustomSSLSocketFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\ssl\CustomX509TrustManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\ssl\SSLHelper$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\ssl\SSLHelper$AllTrustingApacheSSLFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\ssl\SSLHelper$SSLState.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\net\ssl\SSLHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskComperator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskProcessingListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskQueueConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskQueueConfigurationFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueueConfigurationDefaultFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\CacheService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\importservice\GenericImportService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\importservice\ImportService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\importservice\ImportServiceContract$GenericBroadcastManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\importservice\ImportServiceContract.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\importservice\OrderedImportService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\importservice\OrderedImportServiceContract.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpOrderedAsyncAssister$HttpOrderedAsyncHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpOrderedAsyncAssister$HttpOrderedAsyncHandler2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpOrderedAsyncAssister$HttpOrderedAsyncRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpOrderedAsyncAssister$NextWebRequestDelegate.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpOrderedAsyncAssister$NoNextWebRequestDelegate.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpOrderedAsyncAssister.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpService$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpService$HttpServiceBinder.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpService$WebRequestFutureContainer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpService$WebRequestReturnContainer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpServiceAssister$HttpServiceAssisterConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpServiceAssister$WebRequestInformation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\HttpServiceAssister.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\net\ServiceProcessorIdGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\AdjustableImageProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\DataProcessor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\DataProcessor$ProcessingData.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\DataProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\DummyProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\HeadRequestProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\ImageProcessor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\ImageProcessor$ImageProcessHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\ImageProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\JSONArrayProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\JSONProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\RawDataProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\ServiceProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\ServiceProcessorMessageUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\SoapProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\StreamProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\SynchronousProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\SynchronousXmlProcessorNoDom$XmlProcessorNoDomHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\SynchronousXmlProcessorNoDom.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\XMLProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\XMLProcessorNoDom$XmlProcessorNoDomHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\XMLProcessorNoDom.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\service\processor\XMLXPathProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\AndroidUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager$CacheAlarmHook.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager$CacheAlarmReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager$CacheItem.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager$CachedObject$From.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager$CachedObject.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager$ComponentCallbackListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\CacheManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\ConnectivityHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\SoapUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\Utils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\Utils$ForegroundCheckTask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\at\diamonddogs\util\WorkerQueue.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\org\apache\commons\codec\CharEncoding.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\org\apache\commons\codec\binary\Hex.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\debug\org\apache\commons\codec\binary\StringUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\android\support\v4\util\LruCache.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\builder\WebRequestBuilder$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\builder\WebRequestBuilder$ConnectionTimeout.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\builder\WebRequestBuilder$ReadTimeout.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\builder\WebRequestBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\builder\WebRequestBuilderConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\builder\WebRequestBuilderDefaultConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\contentprovider\AbstractDefaultContentProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\contentprovider\CacheContentProvider$CacheContentProviderDatabaseHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\contentprovider\CacheContentProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\ReplyAdapter$Status.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\ReplyAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\database\DataBaseAdapterCacheInformation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\database\DatabaseAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\database\Query.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\parcelable\ParcelableAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterTempFile$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterTempFile.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebReply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebReply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebRequest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\soap\SoapByteArrayAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\soap\SoapReplyAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\adapter\soap\SoapRequestAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\CacheInformation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\NonTimeCriticalTask$PRIORITY.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\NonTimeCriticalTask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\NonTimeCriticalTaskQueueDefaultConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\NonTimeCriticalWebRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\Reply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\Request.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\SoapReply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\SoapRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\TempFile.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\WebReply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\WebRequest$Type.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\dataobjects\WebRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\parser\JSONArrayProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\parser\JSONObjectProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\data\parser\ParserProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\exception\CacheManagerException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\exception\DatabaseAdapterException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\exception\ProcessorExeception.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\exception\ServiceException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\exception\WebClientException.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\http\BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\http\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\http\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\http\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\http\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\http\R.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClient$DownloadProgressListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClient$HTTPStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClient$WebClientReplyListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClient.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClientDefaultHttpClient.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClientFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClientHttpURLConnection$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\WebClientHttpURLConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\ssl\CustomSSLSocketFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\ssl\CustomX509TrustManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\ssl\SSLHelper$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\ssl\SSLHelper$AllTrustingApacheSSLFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\ssl\SSLHelper$SSLState.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\net\ssl\SSLHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskComperator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskProcessingListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskQueueConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue$NonTimeCriticalTaskQueueConfigurationFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueueConfigurationDefaultFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\CacheService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\importservice\GenericImportService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\importservice\ImportService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\importservice\ImportServiceContract$GenericBroadcastManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\importservice\ImportServiceContract.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\importservice\OrderedImportService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\importservice\OrderedImportServiceContract.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpOrderedAsyncAssister$HttpOrderedAsyncHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpOrderedAsyncAssister$HttpOrderedAsyncHandler2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpOrderedAsyncAssister$HttpOrderedAsyncRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpOrderedAsyncAssister$NextWebRequestDelegate.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpOrderedAsyncAssister$NoNextWebRequestDelegate.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpOrderedAsyncAssister.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpService$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpService$HttpServiceBinder.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpService$WebRequestFutureContainer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpService$WebRequestReturnContainer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpServiceAssister$HttpServiceAssisterConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpServiceAssister$WebRequestInformation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\HttpServiceAssister.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\net\ServiceProcessorIdGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\AdjustableImageProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\DataProcessor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\DataProcessor$ProcessingData.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\DataProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\DummyProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\HeadRequestProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\ImageProcessor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\ImageProcessor$ImageProcessHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\ImageProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\JSONArrayProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\JSONProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\RawDataProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\ServiceProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\ServiceProcessorMessageUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\SoapProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\StreamProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\SynchronousProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\SynchronousXmlProcessorNoDom$XmlProcessorNoDomHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\SynchronousXmlProcessorNoDom.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\XMLProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\XMLProcessorNoDom$XmlProcessorNoDomHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\XMLProcessorNoDom.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\service\processor\XMLXPathProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\AndroidUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager$CacheAlarmHook.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager$CacheAlarmReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager$CacheItem.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager$CachedObject$From.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager$CachedObject.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager$ComponentCallbackListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\CacheManager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\ConnectivityHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\SoapUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\Utils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\Utils$ForegroundCheckTask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\at\diamonddogs\util\WorkerQueue.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\org\apache\commons\codec\CharEncoding.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\org\apache\commons\codec\binary\Hex.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\classes\release\org\apache\commons\codec\binary\StringUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\aidl\debug\dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\aidl\release\dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\aidl\test\debug\dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\mergeAssets\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\mergeAssets\release\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\mergeAssets\test\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\mergeResources\test\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\packageResources\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\incremental\packageResources\release\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\libs\android-http-debug-test.ap_" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\manifests\test\debug\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\res\test\debug\drawable-hdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\res\test\debug\drawable-ldpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\res\test\debug\drawable-mdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\res\test\debug\drawable-xhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\res\test\debug\values-v11\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\res\test\debug\values-v14\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\res\test\debug\values\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\intermediates\symbols\test\debug\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\outputs\aar\android-http.aar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\tmp\packageDebugJar\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\build\tmp\packageReleaseJar\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\libs\httpmime-4.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\libs\ksoap2-android-assembly-2.6.1-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\libs\slf4j-android-1.6.1-RC1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\libs\slf4j-api-1.7.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\android\support\v4\util\LruCache.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\builder\WebRequestBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\builder\WebRequestBuilderConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\builder\WebRequestBuilderDefaultConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\contentprovider\AbstractDefaultContentProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\contentprovider\CacheContentProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\ReplyAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\database\DataBaseAdapterCacheInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\database\DatabaseAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\database\Query.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\parcelable\ParcelableAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterTempFile.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebReply.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\parcelable\ParcelableAdapterWebRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\soap\SoapByteArrayAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\soap\SoapReplyAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\adapter\soap\SoapRequestAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\CacheInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\NonTimeCriticalTask.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\NonTimeCriticalTaskQueueDefaultConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\NonTimeCriticalWebRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\Reply.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\Request.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\SoapReply.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\SoapRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\TempFile.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\WebReply.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\dataobjects\WebRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\parser\JSONArrayProxy.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\parser\JSONObjectProxy.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\data\parser\ParserProxy.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\exception\CacheManagerException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\exception\DatabaseAdapterException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\exception\ProcessorExeception.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\exception\ServiceException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\exception\WebClientException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\net\WebClient.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\net\WebClientDefaultHttpClient.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\net\WebClientFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\net\WebClientHttpURLConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\net\ssl\CustomSSLSocketFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\net\ssl\CustomX509TrustManager.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\net\ssl\SSLHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\nontimecritical\NonTimeCriticalTaskManager.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\nontimecritical\NonTimeCriticalTaskQueueConfigurationDefaultFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\CacheService.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\importservice\GenericImportService.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\importservice\ImportService.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\importservice\ImportServiceContract.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\importservice\OrderedImportService.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\importservice\OrderedImportServiceContract.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\net\HttpOrderedAsyncAssister.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\net\HttpService.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\net\HttpServiceAssister.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\net\ServiceProcessorIdGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\AdjustableImageProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\DataProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\DummyProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\HeadRequestProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\ImageProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\JSONArrayProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\JSONProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\RawDataProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\ServiceProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\ServiceProcessorMessageUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\SoapProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\StreamProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\SynchronousProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\SynchronousXmlProcessorNoDom.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\XMLProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\XMLProcessorNoDom.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\service\processor\XMLXPathProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\util\AndroidUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\util\CacheManager.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\util\ConnectivityHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\util\SoapUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\util\Utils.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\at\diamonddogs\util\WorkerQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\org\apache\commons\codec\CharEncoding.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\org\apache\commons\codec\binary\Hex.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\java\org\apache\commons\codec\binary\StringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\drawable-ldpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\android-http\src\main\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\app\src\main\java\at\fhtw\rssreader\dao\RssHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\app\src\main\java\at\fhtw\rssreader\dao\RssReader.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\build\intermediates\model_data.bin" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\app\src\main\res\layout\fragment_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_subscribe.xml" />
-      <change type="MOVED" beforePath="C:\Users\Marco\AndroidStudioProjects\RssReader\greendao-1.3.7\greendao-1.3.7.iml" afterPath="$PROJECT_DIR$/greendao-generator-1.3.1/greendao-generator-1.3.1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/outputs/aar/SAXRSSReader.aar" afterPath="$PROJECT_DIR$/SAXRSSReader/build/outputs/aar/SAXRSSReader.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/bundles/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/bundles/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/bundles/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/generated/source/buildConfig/debug/nl/matshofman/saxrssreader/BuildConfig.java" afterPath="$PROJECT_DIR$/SAXRSSReader/build/generated/source/buildConfig/debug/nl/matshofman/saxrssreader/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/generated/source/buildConfig/release/nl/matshofman/saxrssreader/BuildConfig.java" afterPath="$PROJECT_DIR$/SAXRSSReader/build/generated/source/buildConfig/release/nl/matshofman/saxrssreader/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/DaoMaster.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/DaoMaster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/DaoSession.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/DaoSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/fragments/FeedListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/fragments/FeedListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/fragments/ItemListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/fragments/ItemListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyDaoGenerator/MyDaoGenerator.iml" afterPath="$PROJECT_DIR$/MyDaoGenerator/MyDaoGenerator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyDaoGenerator/src/main/java/pl/surecase/eu/MyDaoGenerator.java" afterPath="$PROJECT_DIR$/MyDaoGenerator/src/main/java/pl/surecase/eu/MyDaoGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/src/main/java/nl/matshofman/saxrssreader/RssFeed.java" afterPath="$PROJECT_DIR$/SAXRSSReader/src/main/java/nl/matshofman/saxrssreader/RssFeed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeed.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeedDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeedDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/RssFeedService.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/RssFeedService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/src/main/java/nl/matshofman/saxrssreader/RssHandler.java" afterPath="$PROJECT_DIR$/SAXRSSReader/src/main/java/nl/matshofman/saxrssreader/RssHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItemDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItemDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/SAXRSSReader.iml" afterPath="$PROJECT_DIR$/SAXRSSReader/SAXRSSReader.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/fragments/SubscribeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/fragments/SubscribeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyDaoGenerator/build.gradle" afterPath="$PROJECT_DIR$/MyDaoGenerator/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_itemlist.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_itemlist.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rsslist.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rsslist.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/greendao_1_3_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/greendao_1_3_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/mergeAssets/release/merger.xml" afterPath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/mergeAssets/release/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/packageResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/packageResources/release/merger.xml" afterPath="$PROJECT_DIR$/SAXRSSReader/build/intermediates/incremental/packageResources/release/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/rssitem.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/rssitem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/bin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/favorite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/read.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/unread.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/DaoMaster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/DaoSession.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/RssFeed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/RssFeedContentProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/RssFeedDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/saxrssreader/RssFeedModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/saxrssreader/RssHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/RssItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/RssItemContentProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java-gen/at/fhtw/rssreader/RssItemDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/saxrssreader/RssItemModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/saxrssreader/RssReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RssReader.iws" />
@@ -585,8 +106,20 @@
       <file leaf-file-name="RssFeedService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/RssFeedService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1776" max-vertical-offset="2822">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="2822">
               <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RssItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2380">
+              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -604,20 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RssFeedContentProvider.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeedContentProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3313433" vertical-offset="1079" max-vertical-offset="2941">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RssFeedDao.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RssFeedDao.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeedDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="2465">
+            <state vertical-scroll-proportion="-1.9522388" vertical-offset="790" max-vertical-offset="2465">
               <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
@@ -3606,11 +3129,16 @@
       <created>1413454503921</created>
       <updated>1413454503921</updated>
     </task>
+    <task id="LOCAL-00001" summary="actionbar added&#10;contentprovider added">
+      <created>1413994184654</created>
+      <updated>1413994184655</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1382" height="784" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -3633,7 +3161,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31467474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31467474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -3994,16 +3522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2380">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItemDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="4930">
@@ -4098,16 +3616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/RssFeedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1776" max-vertical-offset="2822">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyDaoGenerator/src/main/java/pl/surecase/eu/MyDaoGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1020">
@@ -4126,22 +3634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeedDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="2465">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItemContentProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2941">
@@ -4154,6 +3646,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3313433" vertical-offset="1079" max-vertical-offset="2941">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/RssFeedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="2822">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2380">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/at/fhtw/rssreader/dao/RssFeedDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9522388" vertical-offset="790" max-vertical-offset="2465">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
