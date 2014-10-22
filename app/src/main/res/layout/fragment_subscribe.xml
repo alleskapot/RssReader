@@ -20,7 +20,8 @@
         android:layout_toStartOf="@+id/subscribebutton"
         android:singleLine="true"
         android:layout_alignBottom="@+id/subscribebutton"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:text="http://derstandard.at/?page=rss&amp;ressort=seite1" />
 
     <Button
         android:layout_width="wrap_content"

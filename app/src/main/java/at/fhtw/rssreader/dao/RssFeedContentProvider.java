@@ -55,8 +55,6 @@ import de.greenrobot.dao.DaoLog;
     @Override
     public boolean onCreate() {
         daoSession = MainActivity.getDaoSession();
-        //For testing - remove after!
-        daoSession.getRssFeedDao().deleteAll();
         /*if(daoSession == null) {
             throw new IllegalStateException("DaoSession must be set before content provider is created");
         }*/
@@ -66,6 +64,8 @@ import de.greenrobot.dao.DaoLog;
 
     protected SQLiteDatabase getDatabase() {
         daoSession = MainActivity.getDaoSession();
+        //For testing - remove after!
+        daoSession.getRssFeedDao().deleteAll();
     if(daoSession == null) {
     throw new IllegalStateException("DaoSession must be set during content provider is active");
     }

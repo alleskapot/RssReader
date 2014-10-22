@@ -71,14 +71,16 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
         @SuppressWarnings("unchecked")
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
-            Log.v("myApp", "Receiving Result");
+            Log.v("Rss Reader", "Receiving Result");
             RssFeedModel feed = (RssFeedModel) resultData.getParcelable("feed");
 
            if (feed != null) {
                FeedListFragment listFragment = new FeedListFragment();
-               getFragmentManager().beginTransaction().replace(R.id.container, listFragment).addToBackStack(null).commit();
+               listFragment.setArguments(resultData);
 
-               //listFragment.setArguments(resultData);
+               //getFragmentManager().beginTransaction().replace(R.id.container, listFragment).addToBackStack(null).commit();
+
+
                //listFragment.addToList(feed);
                /*RssFeedAdapter adapter = new RssFeedAdapter(getActivity(), feed.getRssItems());
                list.setAdapter(adapter);*/
