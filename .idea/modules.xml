@@ -4,10 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyDaoGenerator/MyDaoGenerator.iml" filepath="$PROJECT_DIR$/MyDaoGenerator/MyDaoGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/RssReader.iml" filepath="$PROJECT_DIR$/RssReader.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SAXRSSReader/SAXRSSReader.iml" filepath="$PROJECT_DIR$/SAXRSSReader/SAXRSSReader.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android-http/android-http.iml" filepath="$PROJECT_DIR$/android-http/android-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/greendao-1.3.7/greendao-1.3.7.iml" filepath="$PROJECT_DIR$/greendao-1.3.7/greendao-1.3.7.iml" />
     </modules>
   </component>
 </project>

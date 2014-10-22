@@ -49,7 +49,7 @@ public class ItemListFragment extends Fragment {
     public void addItems(RssFeed feed){
         Log.v("Rss Reader", "Adding Items to List");
 
-        allItems.addAll((ArrayList<RssItem>)feed.getRssItems());
+       // allItems.addAll((ArrayList<RssItem>)feed.getRssItems());
 
         adapter.notifyDataSetChanged();
     }

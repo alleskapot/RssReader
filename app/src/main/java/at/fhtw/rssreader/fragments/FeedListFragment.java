@@ -1,95 +1,77 @@
 package at.fhtw.rssreader.fragments;
 
-import android.app.Fragment;
+import android.app.ListFragment;
+import android.database.Cursor;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.ResultReceiver;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
+import android.widget.CursorAdapter;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import at.fhtw.rssreader.R;
-import at.fhtw.rssreader.RssFeedAdapter;
-import at.fhtw.rssreader.dao.RssFeed;
-import at.fhtw.rssreader.dao.RssItem;
+import at.fhtw.rssreader.adapter.FeedListAdapter;
+import at.fhtw.rssreader.dao.RssFeedContentProvider;
+import at.fhtw.rssreader.dao.RssFeedDao;
+import at.fhtw.rssreader.listener.FeedListChoiceModeListener;
 
 
 //import at.fhtw.rssreader.RssItemService;
 
-public class FeedListFragment extends Fragment implements AdapterView.OnItemClickListener {
+public class FeedListFragment extends ListFragment {
 
-    private ListView listView;
-    private View rootView;
+    private CursorAdapter adapter;
 
-    private List<RssFeed> rssFeeds;
-    private  RssFeedAdapter adapter;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+        // Fetch rss feeds.
+        Cursor cursor = getActivity()
+                .getContentResolver()
+                .query(RssFeedContentProvider.CONTENT_URI,
+                        new String[]{RssFeedDao.Properties.Id.columnName,
+                                RssFeedDao.Properties.Title.columnName},
+                        null, null, null);
+        // Set up the cursor adapter.
+        adapter = new FeedListAdapter(getActivity(), cursor, 0);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        rootView = inflater.inflate(R.layout.fragment_rsslist, container, false);
-        listView = (ListView) rootView.findViewById(R.id.rssListView);
-        listView.setOnItemClickListener(this);
+        View rootView =  inflater.inflate(R.layout.fragment_rsslist, container, false);
 
-        rssFeeds = new ArrayList<RssFeed>();
-        adapter = new RssFeedAdapter(getActivity(), rssFeeds);
+        ListView listView = (ListView) rootView.findViewById(R.id.rssListView);
         listView.setAdapter(adapter);
+        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
+        listView.setMultiChoiceModeListener(new FeedListChoiceModeListener(getActivity(), listView, getResources()));
+
 
         return rootView;
     }
-
-    private final ResultReceiver resultReceiver = new ResultReceiver(new Handler()) {
-        @SuppressWarnings("unchecked")
-        @Override
-        protected void onReceiveResult(int resultCode, Bundle resultData) {
-            /*List<RssItem> items = (List<RssItem>) resultData.getParcelable("items");
-            if (items != null) {
-                RssFeedAdapter adapter = new RssFeedAdapter(getActivity(), items);
-                listView.setAdapter(adapter);
-            } else {
-                Toast.makeText(getActivity(), "An error occured while downloading the rss feed.",
-                        Toast.LENGTH_LONG).show();
-            }*/
-        };
-    };
-
-    public void addToList(RssFeed rssFeed){
-        //Log.v("Rss Reader","FEED RECIEVED in RSSListFragment");
-        rssFeeds.add(rssFeed);
-        adapter.notifyDataSetChanged();
-    }
-    /*private void startService() {
-        Intent intent = new Intent(getActivity(), RssItemService.class);
-        intent.putExtra("itemreceiver", resultReceiver);
-        getActivity().startService(intent);
-    }*/
-
-
-
+/*
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         RssFeed feed = (RssFeed) adapter.getItem(position);
         Log.v("Rss Reader", "Feed click gecaptured!");
         Log.v("Rss Reader", feed.getTitle().toString());
-        RssItem test = feed.getRssItems().get(0);
+        //RssItem test = feed.getRssItems().get(0);
 
         ItemListFragment listFragment = new ItemListFragment();
-        getFragmentManager().beginTransaction().replace(R.id.container_fragment, listFragment).addToBackStack(null).commit();
+        //getFragmentManager().beginTransaction().replace(R.id.container_fragment, listFragment).addToBackStack(null).commit();
 
         Log.v("Rss Reader", "Changed Fragment");
 
         //listFragment.setArguments(resultData);
-        listFragment.addItems(feed);
+        //listFragment.addItems(feed);
         /*Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);*/
-    }
+        startActivity(intent);
+    }*/
+
+
 
 
 }

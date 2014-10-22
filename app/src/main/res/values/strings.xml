@@ -7,6 +7,11 @@
     <string name="subscribe">Subscribe to new Rss-Feed</string>
     <string name="sub">Subscribe</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="add">Add</string>
+    <string name="add">Add Feed</string>
+    <string name="favorite">Favorit markieren</string>
+    <string name="read">Gelesen makieren</string>
+    <string name="unread">Ungelesen makieren</string>
+    <string name="delete">Feed löschen</string>
 
+    <plurals name="feeds">Feeds</plurals>
 </resources>

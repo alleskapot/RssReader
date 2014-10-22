@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package nl.matshofman.saxrssreader;
+package saxrssreader;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+
 
 public class RssHandler extends DefaultHandler {
 	
@@ -37,7 +38,7 @@ public class RssHandler extends DefaultHandler {
 	 * Return the parsed RssFeed with it's RssItems
 	 * @return
 	 */
-	public RssFeed getResult() {
+	public RssFeedModel getResult() {
 		return rssFeed;
 	}
 

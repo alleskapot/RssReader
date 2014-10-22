@@ -3,8 +3,8 @@
     tools:context=".MainActivity">
 
     <item
-        android:id="@+id/add"
-        android:icon="@drawable/add"
+        android:id="@+id/delete"
+        android:icon="@drawable/bin"
         android:showAsAction="ifRoom"
-        android:title="@string/add" />
+        android:title="@string/delete" />
 </menu>

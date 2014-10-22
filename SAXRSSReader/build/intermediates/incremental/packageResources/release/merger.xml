@@ -2,12 +2,12 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\SAXRSSReader\src\main\res" />
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\SAXRSSReader\build\generated\res\rs\release" />
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\SAXRSSReader\build\generated\res\generated\release" />
+        <source path="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\src\main\res" />
+        <source path="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\build\generated\res\rs\release" />
+        <source path="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\build\generated\res\generated\release" />
     </dataSet>
     <dataSet config="release" >
-        <source path="C:\Users\Daniel\AndroidStudioProjects\RssReader\SAXRSSReader\src\release\res" />
+        <source path="C:\Users\Marco\AndroidStudioProjects\RssReader\SAXRSSReader\src\release\res" />
     </dataSet>
 
 </merger>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/favorite"
+        android:showAsAction="ifRoom"
+        android:title="@string/favorite" />
+
+    <item
+        android:id="@+id/read"
+        android:icon="@drawable/read"
+        android:showAsAction="ifRoom"
+        android:title="@string/read" />
+
+    <item
+        android:id="@+id/unread"
+        android:icon="@drawable/unread"
+        android:showAsAction="ifRoom"
+        android:title="@string/unread" />
+</menu>

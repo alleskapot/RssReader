@@ -4,11 +4,14 @@ import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
 import de.greenrobot.daogenerator.Property;
 import de.greenrobot.daogenerator.Schema;
+import de.greenrobot.daogenerator.ToMany;
 
 public class MyDaoGenerator {
 
-    public static void main(String args[]) throws Exception {
-        Schema schema = new Schema(3, "at.fhtw.rssreader");
+    Schema schema = new Schema(3, "at.fhtw.rssreader");
+
+    private void generateSchema(String outputDirectory){
+
 
         Entity feedtbl = schema.addEntity("RssFeed");
         feedtbl.addIdProperty().autoincrement();
@@ -17,7 +20,7 @@ public class MyDaoGenerator {
         feedtbl.addStringProperty("description");
         feedtbl.addStringProperty("language");
 
-        Entity articletbl = schema.addEntity("RssItem");
+        Entity articletbl = this.schema.addEntity("RssItem");
         Property articleId = articletbl.addIdProperty().autoincrement().getProperty();
         articletbl.addStringProperty("title");
         articletbl.addStringProperty("description");
@@ -25,10 +28,27 @@ public class MyDaoGenerator {
         articletbl.addDateProperty("pubDate");
         articletbl.addStringProperty("content");
         articletbl.addBooleanProperty("read");
-        articletbl.addBooleanProperty("highlighted");
+        articletbl.addBooleanProperty("favorite");
 
-        feedtbl.addToMany(articletbl, articleId, "rssItems");
+        // Item belongs to ONE feed
+        articletbl.addToOne(feedtbl, articleId);
 
-        new DaoGenerator().generateAll(schema, args[0]);
+        // Feed has multiple items
+        ToMany feedToItems = feedtbl.addToMany(articletbl, articleId);
+        feedToItems.setName("items");
+
+        // Autogenerate content provider
+        feedtbl.addContentProvider();
+        articletbl.addContentProvider();
+
+        try {
+            new DaoGenerator().generateAll(schema, outputDirectory);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public static void main(String args[]) throws Exception {
+        MyDaoGenerator generator = new MyDaoGenerator();
+        generator.generateSchema(args[0]);
     }
 }

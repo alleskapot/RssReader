@@ -32,7 +32,7 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        rootView = inflater.inflate(R.layout.fragment_subscribe, container, false);
         //Set OnClick for subscribebutton
         Sub = (Button) rootView.findViewById(R.id.subscribebutton);
         Sub.setOnClickListener(this);
@@ -75,9 +75,9 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
             RssFeed feed = (RssFeed) resultData.getParcelable("feed");
 
            if (feed != null) {
-               FeedListFragment listFragment = (FeedListFragment)getFragmentManager().findFragmentById(R.id.container_fragment);
+               FeedListFragment listFragment = (FeedListFragment)getFragmentManager().findFragmentById(R.id.container);
                //listFragment.setArguments(resultData);
-               listFragment.addToList(feed);
+               //listFragment.addToList(feed);
                /*RssFeedAdapter adapter = new RssFeedAdapter(getActivity(), feed.getRssItems());
                list.setAdapter(adapter);*/
            } else {

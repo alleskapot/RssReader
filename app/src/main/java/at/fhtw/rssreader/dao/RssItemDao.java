@@ -4,11 +4,13 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import de.greenrobot.dao.AbstractDao;
 import de.greenrobot.dao.Property;
 import de.greenrobot.dao.internal.DaoConfig;
+import de.greenrobot.dao.internal.SqlUtils;
 import de.greenrobot.dao.query.Query;
 import de.greenrobot.dao.query.QueryBuilder;
 
@@ -32,10 +34,12 @@ public class RssItemDao extends AbstractDao<RssItem, Long> {
         public final static Property PubDate = new Property(4, java.util.Date.class, "pubDate", false, "PUB_DATE");
         public final static Property Content = new Property(5, String.class, "content", false, "CONTENT");
         public final static Property Read = new Property(6, Boolean.class, "read", false, "READ");
-        public final static Property Highlighted = new Property(7, Boolean.class, "highlighted", false, "HIGHLIGHTED");
+        public final static Property Favorite = new Property(7, Boolean.class, "favorite", false, "FAVORITE");
     };
 
-    private Query<RssItem> rssFeed_RssItemsQuery;
+    private DaoSession daoSession;
+
+    private Query<RssItem> rssFeed_ItemsQuery;
 
     public RssItemDao(DaoConfig config) {
         super(config);
@@ -43,6 +47,7 @@ public class RssItemDao extends AbstractDao<RssItem, Long> {
     
     public RssItemDao(DaoConfig config, DaoSession daoSession) {
         super(config, daoSession);
+        this.daoSession = daoSession;
     }
 
     /** Creates the underlying database table. */
@@ -56,7 +61,7 @@ public class RssItemDao extends AbstractDao<RssItem, Long> {
                 "'PUB_DATE' INTEGER," + // 4: pubDate
                 "'CONTENT' TEXT," + // 5: content
                 "'READ' INTEGER," + // 6: read
-                "'HIGHLIGHTED' INTEGER);"); // 7: highlighted
+                "'FAVORITE' INTEGER);"); // 7: favorite
     }
 
     /** Drops the underlying database table. */
@@ -105,10 +110,16 @@ public class RssItemDao extends AbstractDao<RssItem, Long> {
             stmt.bindLong(7, read ? 1l: 0l);
         }
  
-        Boolean highlighted = entity.getHighlighted();
-        if (highlighted != null) {
-            stmt.bindLong(8, highlighted ? 1l: 0l);
+        Boolean favorite = entity.getFavorite();
+        if (favorite != null) {
+            stmt.bindLong(8, favorite ? 1l: 0l);
         }
+    }
+
+    @Override
+    protected void attachEntity(RssItem entity) {
+        super.attachEntity(entity);
+        entity.__setDaoSession(daoSession);
     }
 
     /** @inheritdoc */
@@ -128,7 +139,7 @@ public class RssItemDao extends AbstractDao<RssItem, Long> {
             cursor.isNull(offset + 4) ? null : new java.util.Date(cursor.getLong(offset + 4)), // pubDate
             cursor.isNull(offset + 5) ? null : cursor.getString(offset + 5), // content
             cursor.isNull(offset + 6) ? null : cursor.getShort(offset + 6) != 0, // read
-            cursor.isNull(offset + 7) ? null : cursor.getShort(offset + 7) != 0 // highlighted
+            cursor.isNull(offset + 7) ? null : cursor.getShort(offset + 7) != 0 // favorite
         );
         return entity;
     }
@@ -143,7 +154,7 @@ public class RssItemDao extends AbstractDao<RssItem, Long> {
         entity.setPubDate(cursor.isNull(offset + 4) ? null : new java.util.Date(cursor.getLong(offset + 4)));
         entity.setContent(cursor.isNull(offset + 5) ? null : cursor.getString(offset + 5));
         entity.setRead(cursor.isNull(offset + 6) ? null : cursor.getShort(offset + 6) != 0);
-        entity.setHighlighted(cursor.isNull(offset + 7) ? null : cursor.getShort(offset + 7) != 0);
+        entity.setFavorite(cursor.isNull(offset + 7) ? null : cursor.getShort(offset + 7) != 0);
      }
     
     /** @inheritdoc */
@@ -169,18 +180,109 @@ public class RssItemDao extends AbstractDao<RssItem, Long> {
         return true;
     }
     
-    /** Internal query to resolve the "rssItems" to-many relationship of RssFeed. */
-    public List<RssItem> _queryRssFeed_RssItems(Long id) {
+    /** Internal query to resolve the "items" to-many relationship of RssFeed. */
+    public List<RssItem> _queryRssFeed_Items(Long id) {
         synchronized (this) {
-            if (rssFeed_RssItemsQuery == null) {
+            if (rssFeed_ItemsQuery == null) {
                 QueryBuilder<RssItem> queryBuilder = queryBuilder();
                 queryBuilder.where(Properties.Id.eq(null));
-                rssFeed_RssItemsQuery = queryBuilder.build();
+                rssFeed_ItemsQuery = queryBuilder.build();
             }
         }
-        Query<RssItem> query = rssFeed_RssItemsQuery.forCurrentThread();
+        Query<RssItem> query = rssFeed_ItemsQuery.forCurrentThread();
         query.setParameter(0, id);
         return query.list();
     }
 
+    private String selectDeep;
+
+    protected String getSelectDeep() {
+        if (selectDeep == null) {
+            StringBuilder builder = new StringBuilder("SELECT ");
+            SqlUtils.appendColumns(builder, "T", getAllColumns());
+            builder.append(',');
+            SqlUtils.appendColumns(builder, "T0", daoSession.getRssFeedDao().getAllColumns());
+            builder.append(" FROM RSS_ITEM T");
+            builder.append(" LEFT JOIN RSS_FEED T0 ON T.'_id'=T0.'_id'");
+            builder.append(' ');
+            selectDeep = builder.toString();
+        }
+        return selectDeep;
+    }
+    
+    protected RssItem loadCurrentDeep(Cursor cursor, boolean lock) {
+        RssItem entity = loadCurrent(cursor, 0, lock);
+        int offset = getAllColumns().length;
+
+        RssFeed rssFeed = loadCurrentOther(daoSession.getRssFeedDao(), cursor, offset);
+        entity.setRssFeed(rssFeed);
+
+        return entity;    
+    }
+
+    public RssItem loadDeep(Long key) {
+        assertSinglePk();
+        if (key == null) {
+            return null;
+        }
+
+        StringBuilder builder = new StringBuilder(getSelectDeep());
+        builder.append("WHERE ");
+        SqlUtils.appendColumnsEqValue(builder, "T", getPkColumns());
+        String sql = builder.toString();
+        
+        String[] keyArray = new String[] { key.toString() };
+        Cursor cursor = db.rawQuery(sql, keyArray);
+        
+        try {
+            boolean available = cursor.moveToFirst();
+            if (!available) {
+                return null;
+            } else if (!cursor.isLast()) {
+                throw new IllegalStateException("Expected unique result, but count was " + cursor.getCount());
+            }
+            return loadCurrentDeep(cursor, true);
+        } finally {
+            cursor.close();
+        }
+    }
+    
+    /** Reads all available rows from the given cursor and returns a list of new ImageTO objects. */
+    public List<RssItem> loadAllDeepFromCursor(Cursor cursor) {
+        int count = cursor.getCount();
+        List<RssItem> list = new ArrayList<RssItem>(count);
+        
+        if (cursor.moveToFirst()) {
+            if (identityScope != null) {
+                identityScope.lock();
+                identityScope.reserveRoom(count);
+            }
+            try {
+                do {
+                    list.add(loadCurrentDeep(cursor, false));
+                } while (cursor.moveToNext());
+            } finally {
+                if (identityScope != null) {
+                    identityScope.unlock();
+                }
+            }
+        }
+        return list;
+    }
+    
+    protected List<RssItem> loadDeepAllAndCloseCursor(Cursor cursor) {
+        try {
+            return loadAllDeepFromCursor(cursor);
+        } finally {
+            cursor.close();
+        }
+    }
+    
+
+    /** A raw-style query where you can pass any WHERE clause and arguments. */
+    public List<RssItem> queryDeep(String where, String... selectionArg) {
+        Cursor cursor = db.rawQuery(getSelectDeep() + where, selectionArg);
+        return loadDeepAllAndCloseCursor(cursor);
+    }
+ 
 }
