@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
 
+import at.fhtw.rssreader.MainActivity;
 import de.greenrobot.dao.DaoLog;
 
 /* Copy this code snippet into your AndroidManifest.xml inside the
@@ -23,7 +24,7 @@ import de.greenrobot.dao.DaoLog;
     public class RssFeedContentProvider extends ContentProvider {
 
     public static final String AUTHORITY = "at.fhtw.rssreader.provider.rssfeed";
-    public static final String BASE_PATH = "";
+    public static final String BASE_PATH = "dao.RssFeedContentProvider";
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + BASE_PATH);
     public static final String CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE
     + "/" + BASE_PATH;
@@ -53,14 +54,18 @@ import de.greenrobot.dao.DaoLog;
 
     @Override
     public boolean onCreate() {
-    // if(daoSession == null) {
-    // throw new IllegalStateException("DaoSession must be set before content provider is created");
-    // }
+        daoSession = MainActivity.getDaoSession();
+        //For testing - remove after!
+        daoSession.getRssFeedDao().deleteAll();
+        /*if(daoSession == null) {
+            throw new IllegalStateException("DaoSession must be set before content provider is created");
+        }*/
     DaoLog.d("Content Provider started: " + CONTENT_URI);
     return true;
     }
 
     protected SQLiteDatabase getDatabase() {
+        daoSession = MainActivity.getDaoSession();
     if(daoSession == null) {
     throw new IllegalStateException("DaoSession must be set during content provider is active");
     }

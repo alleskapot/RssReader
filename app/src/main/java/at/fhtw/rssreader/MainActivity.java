@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    protected static DaoSession getDaoSession(){
+    public static DaoSession getDaoSession(){
         try {
             if (_daoSession == null) {
 

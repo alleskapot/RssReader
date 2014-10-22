@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import at.fhtw.rssreader.R;
 import at.fhtw.rssreader.RssFeedService;
-import at.fhtw.rssreader.dao.RssFeed;
+import saxrssreader.RssFeedModel;
 
 public class SubscribeFragment extends Fragment  implements View.OnClickListener{
 
@@ -72,10 +72,12 @@ public class SubscribeFragment extends Fragment  implements View.OnClickListener
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
             Log.v("myApp", "Receiving Result");
-            RssFeed feed = (RssFeed) resultData.getParcelable("feed");
+            RssFeedModel feed = (RssFeedModel) resultData.getParcelable("feed");
 
            if (feed != null) {
-               FeedListFragment listFragment = (FeedListFragment)getFragmentManager().findFragmentById(R.id.container);
+               FeedListFragment listFragment = new FeedListFragment();
+               getFragmentManager().beginTransaction().replace(R.id.container, listFragment).addToBackStack(null).commit();
+
                //listFragment.setArguments(resultData);
                //listFragment.addToList(feed);
                /*RssFeedAdapter adapter = new RssFeedAdapter(getActivity(), feed.getRssItems());

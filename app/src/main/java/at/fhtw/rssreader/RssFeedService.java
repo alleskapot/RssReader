@@ -110,6 +110,8 @@ public class RssFeedService extends IntentService {
         values.put(RssFeedDao.Properties.Title.columnName, title);
         values.put(RssFeedDao.Properties.Link.columnName, rssFeedModel.getLink());
 
+        Log.v("Rss Reader", "URI: "+RssFeedContentProvider.CONTENT_URI);
+
         // Insert rss feed.
         Uri uri = getContentResolver().insert(RssFeedContentProvider.CONTENT_URI, values);
 

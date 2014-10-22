@@ -19,13 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <service android:name=".RssFeedService" android:enabled="true"/>
+
         <provider
             android:name="at.fhtw.rssreader.dao.RssFeedContentProvider"
             android:authorities="at.fhtw.rssreader.provider.rssfeed"/>
         <provider
             android:name="at.fhtw.rssreader.dao.RssItemContentProvider"
             android:authorities="at.fhtw.rssreader.provider.rssitem"/>
+
     </application>
 
 </manifest>
